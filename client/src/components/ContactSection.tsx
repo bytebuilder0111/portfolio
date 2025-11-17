@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Mail, Linkedin, Phone, Copy, Check } from "lucide-react";
+import { Mail, Phone, Copy, Check } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 
@@ -40,7 +40,7 @@ export default function ContactSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
           <Card
             className="p-8 bg-gradient-to-br from-card to-primary/10 border-primary/30 hover:border-primary/50 transition-all hover:-translate-y-2 group cursor-pointer animate-scale-in"
             onClick={() => copyToClipboard("JulianArlebyMunozMendez@gmail.com", "email")}
@@ -77,33 +77,6 @@ export default function ContactSection() {
                     Copy
                   </>
                 )}
-              </Button>
-            </div>
-          </Card>
-
-          <Card
-            className="p-8 bg-gradient-to-br from-card to-chart-2/10 border-primary/30 hover:border-primary/50 transition-all hover:-translate-y-2 group cursor-pointer animate-scale-in"
-            style={{ animationDelay: "0.1s" }}
-            onClick={() => window.open("https://www.linkedin.com/in/julian-arleby-munoz-mendez/", "_blank")}
-            data-testid="card-contact-linkedin"
-          >
-            <div className="flex flex-col items-center text-center gap-4">
-              <div className="p-4 bg-gradient-to-br from-primary/20 to-chart-2/20 rounded-2xl group-hover:scale-110 transition-transform">
-                <Linkedin className="w-8 h-8 text-primary" />
-              </div>
-              <div>
-                <h3 className="font-semibold mb-2">LinkedIn</h3>
-                <p className="text-sm text-muted-foreground">
-                  Connect with me
-                </p>
-              </div>
-              <Button
-                variant="ghost"
-                size="sm"
-                className="mt-2"
-                data-testid="button-linkedin"
-              >
-                Visit Profile
               </Button>
             </div>
           </Card>

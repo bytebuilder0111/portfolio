@@ -39,8 +39,8 @@ const certifications: Certification[] = [
 const education = {
   degree: "Bachelor of Engineering (BEng)",
   field: "Computer Software Engineering",
-  institution: "Singapore Institute of Technology",
-  location: "Singapore",
+  institution: "Technological University of Pereira",
+  location: "Colombia",
   period: "2013 – 2017",
   gpa: "3.4"
 };

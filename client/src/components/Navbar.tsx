@@ -39,14 +39,6 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <button
-            onClick={() => scrollToSection("hero")}
-            className="text-xl font-display font-bold bg-gradient-to-r from-primary to-chart-2 bg-clip-text text-transparent"
-            data-testid="button-logo"
-          >
-            JAM
-          </button>
-
           <div className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
               <button

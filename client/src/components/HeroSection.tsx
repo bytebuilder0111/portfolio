@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
-import { ChevronDown, Linkedin, Mail, Phone } from "lucide-react";
+import { ChevronDown, Mail, Phone } from "lucide-react";
 
 export default function HeroSection() {
   const [currentTitle, setCurrentTitle] = useState(0);
@@ -81,15 +81,6 @@ export default function HeroSection() {
           </div>
 
           <div className="flex items-center justify-center gap-6">
-            <a
-              href="https://www.linkedin.com/in/julian-arleby-munoz-mendez/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-primary transition-colors"
-              data-testid="link-linkedin"
-            >
-              <Linkedin className="w-6 h-6" />
-            </a>
             <a
               href="mailto:JulianArlebyMunozMendez@gmail.com"
               className="text-muted-foreground hover:text-primary transition-colors"
